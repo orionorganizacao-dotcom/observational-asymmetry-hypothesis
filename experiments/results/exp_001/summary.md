@@ -1,7 +1,8 @@
 # Experiment 001 Results
 
 ## Status
-Planned
+
+Running
 
 ## Observations
 No results yet.
