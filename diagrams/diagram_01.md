@@ -1,13 +1,25 @@
-observational-asymmetry-hypothesis/
-│
-├── README.md
-├── paper_v0.2.md
-├── falsifiers.md
-├── references.md
-├── oah-core.md
-├── experiment_001.md
-├── adversarial_tests.md
-├── CHANGELOG.md
-│
-└── diagrams/
-      └── diagram_01.md
+# OAH Structural Flow
+
+```text
+Decisional State
+        ↓
+Observational Asymmetry
+        ↓
+Pre-Decisional Commitment
+        ↓
+Verifiability
+        ↓
+A-DAP Implementation
+```
+
+## Interpretation
+
+- A decisional state alone does not guarantee access to its own conditions.
+
+- Observational Asymmetry emerges when the mechanism that produces a decision is also the only mechanism capable of reconstructing it.
+
+- Pre-Decisional Commitment introduces temporal evidence before output generation.
+
+- Verifiability emerges from preserved evidence rather than retrospective explanation.
+
+- A-DAP is an implementation architecture operating under these conditions.
