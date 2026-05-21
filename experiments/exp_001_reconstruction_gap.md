@@ -2,33 +2,35 @@
 
 ## Objective
 
-Measure whether systems can reconstruct decisions better than they can independently verify them.
+Measure whether systems can reconstruct decisions
+better than they can independently verify them.
 
-## Setup
+## Procedure
+
+Step 1:
+Create two systems:
 
 System A:
-- Internal reconstruction only
+Internal reconstruction only
 
 System B:
-- External verification layer
+External verification layer
 
-## Measure
+Step 2:
+Submit identical decision tasks to both systems.
 
-Compare:
+Step 3:
+Hide original internal states.
+
+Step 4:
+Request post-hoc reconstruction.
+
+Step 5:
+Measure:
 
 - Reconstruction confidence
 - Verification confidence
+- Temporal consistency
 
-## Expected Result
-
-System A:
-
-Reconstruction > Verification
-
-System B:
-
-Reconstruction ≈ Verification
-
-## Interpretation
-
-A persistent gap suggests observational asymmetry.
+Step 6:
+Compare scores across repeated trials.
