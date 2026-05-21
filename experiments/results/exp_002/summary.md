@@ -1,7 +1,7 @@
 # Experiment 002 Results
 
 ## Status
-Planned
+Running
 
 ## Observations
 No results yet.
