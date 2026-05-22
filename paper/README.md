@@ -4,9 +4,15 @@ This directory contains the formal components of the Observational Asymmetry Hyp
 
 ## Contents
 
-- paper_v0.2.md → Main paper
-- methods.md → Methodology
-- falsifiers.md → Falsification criteria
-- limitations.md → Limitations
-- references.md → References
-- threat_model.md → Threat model
+- `paper_v0.2.md` → Main manuscript
+- `methods.md` → Experimental methodology
+- `falsifiers.md` → Falsification criteria
+- `limitations.md` → Known assumptions and limitations
+- `references.md` → Bibliography
+- `threat_model.md` → Threat model and attack surfaces
+
+## Status
+
+Current version: v0.2
+
+Status: Active development
