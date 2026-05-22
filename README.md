@@ -1,37 +1,34 @@
 # The Observational Asymmetry Hypothesis (OAH)
 
-Foundational framework on decisional states, observational asymmetry, and verifiable decision architectures.
+A formal framework describing the structural distinction between generating and reconstructing decisional states.
 
 ---
 
 ## Core proposition
 
+Formal statement:
+
+Execution of a decisional state does not guarantee reconstructability of that state from externally accessible information.
+
+Simplified proposition:
+
 > "Execution does not imply observability."
-
-A system may successfully execute a decision without preserving sufficient information to reconstruct how that decision emerged.
-
-Execution and reconstruction are not equivalent processes.
 
 ---
 
 ## Motivation
 
-Modern AI systems increasingly produce consequential actions while exposing only outputs and retrospective explanations.
+Modern AI systems increasingly generate consequential actions while exposing only outputs and retrospective explanations.
 
-Current paradigms largely assume:
+Current assumptions often implicitly treat:
 
-- execution implies accessibility
-- outputs imply reconstructability
-- explanations imply evidence
+- execution as equivalent to accessibility
+- outputs as equivalent to evidence
+- explanations as equivalent to reconstruction
 
-OAH challenges these assumptions.
+These assumptions may fail in systems where informational accessibility differs fundamentally from informational generation.
 
-The hypothesis proposes that there exists a structural distinction between:
-
-- generating a decisional state
-- reconstructing a decisional state
-
-This distinction creates a condition called **observational asymmetry**.
+OAH proposes that such failures are not necessarily implementation problems, but may emerge from structural properties of decisional systems.
 
 ---
 
@@ -41,11 +38,24 @@ This distinction creates a condition called **observational asymmetry**.
 
 Internal informational configuration responsible for generating an action or output.
 
+Examples:
+
+- latent representations
+- internal model states
+- hidden policy configurations
+- intermediate computational structures
+
 ---
 
 ### Execution
 
 Transformation of a decisional state into observable output.
+
+Formally:
+
+```text
+Decisional State → Output
+```
 
 ---
 
@@ -53,11 +63,23 @@ Transformation of a decisional state into observable output.
 
 Ability to reconstruct properties of a decisional state from externally accessible information.
 
+Formally:
+
+```text
+Observable Information → Reconstruction
+```
+
 ---
 
 ### Observational Asymmetry
 
-Condition where generation and reconstruction of a decisional state require fundamentally different informational resources.
+Condition where generation and reconstruction require fundamentally different informational resources.
+
+Formally:
+
+```text
+Generation ≠ Reconstruction
+```
 
 ---
 
@@ -67,26 +89,64 @@ OAH proposes:
 
 > Two systems may generate identical observable outputs while requiring fundamentally different informational accessibility for reconstruction.
 
-If true:
+Consequently:
 
-- outputs alone become insufficient evidence
-- explanations become incomplete proxies
-- auditability requires independent mechanisms
+- identical outputs do not imply identical internal structures
+- explanations may be incomplete proxies
+- outputs alone may be insufficient evidence
+- auditability may require independent mechanisms
 
 ---
 
-## Architectural consequence
+## Conceptual model
 
-If execution does not imply observability, then consequential systems require additional infrastructure capable of preserving reconstructable evidence.
+```text
+Internal State
+        ↓
+Decision Formation
+        ↓
+Execution
+        ↓
+Observable Output
+        ↓
+Reconstruction Attempt
+```
 
-Possible implications:
+OAH suggests that information loss or informational asymmetry may occur between execution and reconstruction.
 
-- AI governance
-- verifiable systems
-- audit architectures
+---
+
+## Expected implications
+
+If observational asymmetry exists, potential consequences include:
+
+### AI governance
+
+- limitations of post-hoc explanations
+- need for independent evidence preservation
+- limitations of transparency-only approaches
+
+### Autonomous systems
+
+- incomplete reconstructability
+- hidden decision pathways
+- latent internal dynamics
+
+### Human-AI interaction
+
+- perception mismatch
+- trust calibration problems
+- explainability limitations
+
+### High-risk systems
+
+Examples:
+
+- healthcare
+- financial systems
+- legal systems
 - autonomous agents
-- human-AI interaction
-- high-risk decision systems
+- safety-critical environments
 
 ---
 
@@ -94,16 +154,16 @@ Possible implications:
 
 ### /paper
 
-Formal components of the hypothesis.
+Formal components of OAH.
 
 Contents:
 
 - `paper_v0.2.md` → Main manuscript
 - `abstract.md` → Abstract
-- `hypotheses.md` → Hypotheses
+- `hypotheses.md` → Formal hypotheses
 - `methods.md` → Experimental methodology
 - `falsifiers.md` → Falsification criteria
-- `limitations.md` → Assumptions and limitations
+- `limitations.md` → Known assumptions and limitations
 - `references.md` → Bibliography
 - `threat_model.md` → Threat model and attack surfaces
 
@@ -116,22 +176,22 @@ Experimental protocols and validation procedures.
 Examples:
 
 - Human-AI perception experiments
-- Decision reconstruction experiments
-- Drift simulations
-- Blind evaluation protocols
+- blind evaluation experiments
+- reconstruction tests
+- drift simulations
 
 ---
 
 ### /diagrams
 
-Conceptual and architectural diagrams.
+Conceptual and architectural visual models.
 
 Examples:
 
 - execution vs reconstruction
 - informational flow
-- observational asymmetry model
-- threat surfaces
+- asymmetry models
+- attack surfaces
 
 ---
 
@@ -141,27 +201,61 @@ OAH is intended as a falsifiable framework.
 
 The hypothesis fails if:
 
-1. reconstruction can always be derived from outputs alone
+### F1
 
-2. decisional states and observable outputs demonstrate complete informational equivalence
+Reconstruction can always be derived from outputs alone.
 
-3. no measurable asymmetry exists between generation and reconstruction processes
+---
+
+### F2
+
+Decisional states and observable outputs demonstrate complete informational equivalence.
+
+---
+
+### F3
+
+No measurable asymmetry exists between generation and reconstruction processes.
+
+---
+
+## Known limitations
+
+Current limitations include:
+
+- conceptual stage
+- incomplete empirical validation
+- dependence on operational definitions
+- reconstruction metrics under development
+- possible domain dependence
+
+OAH does not claim:
+
+- universal applicability
+- proof of correctness
+- proof of consciousness
+- proof of accountability
 
 ---
 
 ## Current status
 
-Version: v0.2
+Version:
 
-Status: Active development
+```text
+v0.2
+```
 
-Development stage:
+Development status:
 
-- conceptual formulation ✓
-- formal structure ✓
-- falsification criteria ✓
-- experimental design in progress
-- empirical validation pending
+```text
+Conceptual formulation      ✓
+Formal structure            ✓
+Definitions                 ✓
+Falsification criteria      ✓
+Experimental design         in progress
+Empirical validation        pending
+```
 
 ---
 
@@ -175,15 +269,15 @@ AI Governance & Verifiability
 
 ---
 
-## Citation
+## Suggested citation
 
 ```bibtex
-@misc{santosOAH2026,
-author = {Ezio v.s. Santos},
-title = {The Observational Asymmetry Hypothesis (OAH)},
-year = {2026},
-note = {Work in progress},
-url = {https://github.com/orionorganizacao-dotcom/observational-asymmetry-hypothesis}
+@misc{santos2026oah,
+author={Ezio v.s. Santos},
+title={The Observational Asymmetry Hypothesis (OAH)},
+year={2026},
+note={Work in progress},
+url={https://github.com/orionorganizacao-dotcom/observational-asymmetry-hypothesis}
 }
 ```
 
@@ -191,4 +285,4 @@ url = {https://github.com/orionorganizacao-dotcom/observational-asymmetry-hypoth
 
 ## License
 
-This repository is released for academic discussion, review, and collaborative development.
+Released for academic discussion, review, criticism, and collaborative development.
